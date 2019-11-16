@@ -13,9 +13,12 @@ namespace LINQ
                 "lahcen","soukaina","khadija","bab","saida","imane","safae","tat"
             };
 
+
             Console.WriteLine("**************  Without LINQ *****************");
-            LINQ1.LINQ1.WithoutLinq1(Names);
-         
+            LINQ1.LINQ1.WithoutLinq(Names);
+
+            Console.WriteLine("**************  Without Anonymous method *****************");
+            LINQ1.LINQ1.WithAnonymousMethod(Names);
 
             Console.WriteLine("**************  With LINQ Query Syntax *****************");
             LINQ1.LINQ1.WithLinq_QuerySyntax(Names);

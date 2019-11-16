@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Linq;
+using System.Runtime.InteropServices.ComTypes;
 
 namespace LINQ.LINQ1
 {
     static class LINQ1
     {
-        public static void WithoutLinq1(List<string> Names)
+        public static void WithoutLinq(List<string> Names)
         {
             List<string> Results = new List<string>();
 
@@ -25,21 +26,30 @@ namespace LINQ.LINQ1
             }
         }
 
-        public static void WithLinq_QuerySyntax(List<string> Names)
+        // Anonymous method
+        public static void WithAnonymousMethod(List<string> Names)
         {
-           var Results = from item in Names where item.Length > 3 select item;
-            
-            foreach (var name in Results)
-            {
-                Console.WriteLine(name);
-            }
+            IEnumerable<string> Results = Names.Where(delegate (string item) { return item.Length > 3;});
+            ShowResults(Results);
         }
 
+        // Query Syntax
+        public static void WithLinq_QuerySyntax(List<string> Names)
+        {
+            IEnumerable<string> Results = from item in Names where item.Length > 3 select item;
+            ShowResults(Results);
+        }
+        // Non Query Syntax
         public static void WithLinq_NonQuerySyntax(List<string> Names)
         {
-            var Results = Names.Where(item => item.Length > 3);
+            IEnumerable<string> Results = Names.Where(item => item.Length > 3).Where(item => item.Contains("i")).Take(2);
+            ShowResults(Results);
+        }
 
-            foreach (var name in Results)
+
+        private static void ShowResults(IEnumerable<string> listResults)
+        {
+            foreach (var name in listResults)
             {
                 Console.WriteLine(name);
             }
