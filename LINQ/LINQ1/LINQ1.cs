@@ -14,7 +14,7 @@ namespace LINQ.LINQ1
 
             for (int i = 0; i < Names.Count; i++)
             {
-                if (Names[i].Length>3) 
+                if (Names[i].Length>3 && Names[i].Contains("i")) 
                 {
                     Results.Add(Names[i]);
                 }
@@ -29,20 +29,22 @@ namespace LINQ.LINQ1
         // Anonymous method
         public static void WithAnonymousMethod(List<string> Names)
         {
-            IEnumerable<string> Results = Names.Where(delegate (string item) { return item.Length > 3;});
+            IEnumerable<string> Results = Names.Where(delegate (string item) { return item.Length > 3 && item.Contains("i"); });
             ShowResults(Results);
         }
 
         // Query Syntax
         public static void WithLinq_QuerySyntax(List<string> Names)
         {
-            IEnumerable<string> Results = from item in Names where item.Length > 3 select item;
+            IEnumerable<string> Results = from item in Names
+                                          where item.Length > 3 && item.Contains("i")
+                                          select item;
             ShowResults(Results);
         }
-        // Non Query Syntax
+        // Non Query Syntax or Fluent Syntax
         public static void WithLinq_NonQuerySyntax(List<string> Names)
         {
-            IEnumerable<string> Results = Names.Where(item => item.Length > 3).Where(item => item.Contains("i")).Take(2);
+            IEnumerable<string> Results = Names.Where(item => item.Length > 3 && item.Contains("i")).Take(2);
             ShowResults(Results);
         }
 
