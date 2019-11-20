@@ -1,0 +1,10 @@
+C:\Users\laittaleb\Desktop\Automation_Tests\dotnet_workspace\LINQ\LINQ\bin\Debug\netcoreapp2.2\LINQ.deps.json
+C:\Users\laittaleb\Desktop\Automation_Tests\dotnet_workspace\LINQ\LINQ\bin\Debug\netcoreapp2.2\LINQ.runtimeconfig.json
+C:\Users\laittaleb\Desktop\Automation_Tests\dotnet_workspace\LINQ\LINQ\bin\Debug\netcoreapp2.2\LINQ.runtimeconfig.dev.json
+C:\Users\laittaleb\Desktop\Automation_Tests\dotnet_workspace\LINQ\LINQ\bin\Debug\netcoreapp2.2\LINQ.dll
+C:\Users\laittaleb\Desktop\Automation_Tests\dotnet_workspace\LINQ\LINQ\bin\Debug\netcoreapp2.2\LINQ.pdb
+C:\Users\laittaleb\Desktop\Automation_Tests\dotnet_workspace\LINQ\LINQ\obj\Debug\netcoreapp2.2\LINQ.csprojAssemblyReference.cache
+C:\Users\laittaleb\Desktop\Automation_Tests\dotnet_workspace\LINQ\LINQ\obj\Debug\netcoreapp2.2\LINQ.AssemblyInfoInputs.cache
+C:\Users\laittaleb\Desktop\Automation_Tests\dotnet_workspace\LINQ\LINQ\obj\Debug\netcoreapp2.2\LINQ.AssemblyInfo.cs
+C:\Users\laittaleb\Desktop\Automation_Tests\dotnet_workspace\LINQ\LINQ\obj\Debug\netcoreapp2.2\LINQ.dll
+C:\Users\laittaleb\Desktop\Automation_Tests\dotnet_workspace\LINQ\LINQ\obj\Debug\netcoreapp2.2\LINQ.pdb

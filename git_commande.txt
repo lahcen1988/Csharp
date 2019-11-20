@@ -1,0 +1,46 @@
+Create New branch for a new feature
+
+•	To be on branch master 
+	  o	Git checkout master
+
+•	show files diff between Head and master 
+	  o	git diff --name-status origin/master HEAD
+
+•	Get all change on remote repository
+      o	Git pull origin master
+
+•	Create new branch to work
+      o	Git branch feat/<new_branch>
+
+•	Switch to the new branch
+      o	Git checkout <new_branch >
+
+Send my work to remote repository
+•	Add my work to stage area
+      o	Git add .
+
+•	Add my work to local repository
+      o	Git commit -m “my message”
+
+•	Add my work to remote repository
+      o	git push --set-upstream origin feat/<new_branch>
+
+
+Utile commands
+•	Difference between my branch and remote branch just name of files changed
+      o	git diff --stat origin/master master
+			--name-status and –name-only are similar to --stat but give a bit more info about each file
+•	Difference between my branch and remote branch
+      o	git diff feat/<my_branch> master
+
+•	Difference commit between Head and my master 
+      o	git diff master origin/master    (master : master local         origin/master: master remote)
+
+•	Show change on a specific commit 
+      o	git show 85e5f6f3
+
+
+      o	git diff branch_a branch_b il faut faire le Add+Commit pour commparer le master local et remotre (ce qui est +(vert) c’est qu’il existe dans brach_b et pas dans a quand c’est – il n’existe pas dans branch_b mais existe dans branch_a)
+
+ 
+
